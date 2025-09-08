@@ -1,0 +1,18 @@
+import numpy as np
+
+matrix = np.random.randint(10,size=(2,2))
+print("Random generated matrix")
+print(matrix)
+det=np.linalg.det(matrix)
+print("Determinant of matrix: ",det)
+inverse=np.linalg.inv(matrix)
+print("Inverse of matrix:\n ",inverse)
+rank=np.linalg.matrix_rank(matrix)
+print("Rank of matrix: ",rank)
+EVal,EVect=np.linalg.eig(matrix)
+print("Eigenvalues:")
+print(EVal)
+print("Eigenvector:")
+print(EVect)
+array_1D=matrix.flatten()
+print("Transform Matrix in 1_D array:", array_1D )
